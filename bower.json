@@ -1,0 +1,31 @@
+{
+  "name": "jmt",
+  "homepage": "http://hydrogene.hu/",
+  "authors": [
+    "Gabor Szabo <szabogabi@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "modernizr": "2.8.2",
+    "bootstrap-sass-official": "3.3.4",
+    "normalize-css": "~3.0.3"
+  },
+  "overrides": {
+    "modernizr": {
+      "main": "./modernizr.js"
+    },
+    "normalize-css": {
+      "main": "./normalize.css"
+    },
+    "bootstrap-sass-official": {
+      "main": [
+        "./assets/javascripts/bootstrap/transition.js",
+        "./assets/javascripts/bootstrap/collapse.js",
+        "./assets/javascripts/bootstrap/dropdown.js",
+        "./assets/javascripts/bootstrap/scrollspy.js",
+        "./assets/javascripts/bootstrap/tab.js"
+      ]
+    }
+  }
+}

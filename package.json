@@ -1,6 +1,7 @@
 {
   "name": "jmt",
-  "version": "Gabor Szabo <szabogabi@gmail.com>",
+  "version": "2.0.0", 
+  "author": "Gabor Szabo <szabogabi@gmail.com>",
   "homepage": "http://hydrogene.hu/",
   "private": true,
   "repository": {
