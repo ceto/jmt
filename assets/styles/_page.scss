@@ -1,0 +1,57 @@
+.page__header {
+	@include clearfix();
+	background-color: $highlight;
+	color:$prilight;
+}
+
+.page__header__text {
+	@include clearfix();
+	@include bp($s2) {
+		float:left;
+		width:66.666%;
+	}
+}
+.page__header__figure {
+	@include clearfix();
+	margin:0;
+	@include bp($s2) {
+		float:right;
+		width:33.333%;
+	}
+
+	img {
+		display: block;
+	}
+}
+
+
+
+.page__header__title {
+	text-transform: uppercase;
+	font-family: dosis;
+	font-weight: 700;
+}
+
+.page__header__intro {
+	text-transform: uppercase;
+	font-family: dosis;
+	font-weight: 700;
+}
+
+.page__content {
+	@include clearfix();
+	@include bp($s2) {
+		float:left;
+		width:66.666%;
+	}
+
+}
+
+.page__sidebar {
+	@include clearfix();	
+	@include bp($s2) {
+		float:right;
+		width:33.333%;
+	}
+
+}
