@@ -1,0 +1,22 @@
+.widget {
+	margin:2em 0;
+	.pagefooter & {
+		margin:0;
+	}
+}
+.widget__title {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1em;
+	line-height: 1;
+	color:$highlight;
+	padding:0 0 0 1.25em;
+	border-left: .333em solid $highlight;
+	margin:0;
+}
+
+.textwidget {
+	padding:.5em 1em 1em 1.75em ;
+	font-size: .875em;
+
+}

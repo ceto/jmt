@@ -2,25 +2,43 @@
 	@include clearfix();
 	background-color: $highlight;
 	color:$prilight;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: left bottom;
+	@include bp($s1) {
+		background-image: none !important;
+	}
 }
 
 .page__header__text {
 	@include clearfix();
-	@include bp($s2) {
+	@include bp($s1) {
 		float:left;
 		width:66.666%;
+		padding-right: 1em;
 	}
 }
 .page__header__figure {
 	@include clearfix();
-	margin:0;
-	@include bp($s2) {
+	position: relative;
+	margin:0 -1em;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: left bottom;
+	
+	@include bp($s1) {
 		float:right;
 		width:33.333%;
+		min-height: 12em;
 	}
 
+	@include bp($s2) {
+		margin:0;
+		min-height: 12em;
+	}
 	img {
 		display: block;
+		display: none;
 	}
 }
 
@@ -28,14 +46,26 @@
 
 .page__header__title {
 	text-transform: uppercase;
-	font-family: dosis;
-	font-weight: 700;
+	font-family: $dosis;
+	font-size: 1.5em;
+	line-height: 1;
+	font-weight: 600;
+	margin:1em 0 0;
 }
 
 .page__header__intro {
-	text-transform: uppercase;
-	font-family: dosis;
-	font-weight: 700;
+	font-size: 1.125em;
+	font-family: $dosis;
+	font-weight: 500;
+	max-width: $s1;
+	margin:.5em 0 2em;
+}
+
+.page__conentwrapper, .page__contentinnerwrapper {
+	@include clearfix();
+	@include bp($s2) {
+		background-image: linear-gradient(to right, $prilight 0, $prilight 66.666%, $seclight 66.666%);
+	}
 }
 
 .page__content {
@@ -43,15 +73,21 @@
 	@include bp($s2) {
 		float:left;
 		width:66.666%;
+		//padding-right: 1em;
+		border-right: .25em solid $prilight;
 	}
 
 }
 
 .page__sidebar {
-	@include clearfix();	
+	@include clearfix();
+	background-color: $seclight;
+	margin:1em -1em 0;
 	@include bp($s2) {
 		float:right;
 		width:33.333%;
+		background-color: transparent;
+		margin:0;
 	}
 
 }
