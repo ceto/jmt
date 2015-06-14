@@ -1,9 +1,8 @@
 <?php use Roots\Sage\Wrapper; ?>
 
 <?php while (have_posts()) : the_post(); ?>
-  <?php get_template_part('templates/page', 'header'); ?>
-
-  <div class="page__conentwrapper">
+	<?php get_template_part('templates/page', 'header'); ?>
+	<div class="page__conentwrapper">
 		<div class="wrapper wrapper--fullwidth">
 			<div class="page__contentinnerwrapper">
 				<div class="page__content">

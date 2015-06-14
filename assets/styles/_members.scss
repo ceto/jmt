@@ -1,0 +1,44 @@
+.member {
+	@include clearfix();
+	margin:2em 0;
+}
+.member__head {
+	@include clearfix();
+	border-left:.333em solid $highlight;
+	background-color: $seclight;
+	padding:.75em 1em;
+}
+.member__name {
+	margin:0 0;
+	font-size: 1em;
+	line-height: 1;
+	text-transform: uppercase;
+	color:$highlight;
+}
+.member__title {
+	font-style: italic;
+	font-weight: 700;
+	margin:.125em 0 0;
+	color:$tertdark;
+}
+.member__photo {
+	margin:2em 0;
+	padding:0;
+	@include bp($s1) {
+		width:33.333%;
+		float:left;
+		padding-right: 1em;
+	}
+	img {
+		display: block;
+	}
+}
+.member__descr {
+	@include clearfix();
+	margin:1em 0;
+	@include bp($s1) {
+		width:66.666%;
+		float:right;
+		padding-left: 1em;
+	}
+}
