@@ -1,27 +1,67 @@
 .page__header {
 	@include clearfix();
-	background-color: $highlight;
 	color:$prilight;
+	background-color: $highlight;
 	background-repeat: no-repeat;
 	background-size: auto 100%;
 	background-position: left bottom;
+	background-image: linear-gradient(to bottom, $highlight 0, $highlight-dark 100% );
+	
 	@include bp($s1) {
-		background-image: none !important;
+		background-image: linear-gradient(to right, $highlight 0, $highlight 66.666%, transparent 66.666%),
+		linear-gradient(to bottom, $highlight 0, $highlight-dark 100% ) !important;
+	}
+
+	@include bp($s2) {
+		
+	}
+
+	.wrapper {
+		max-width: $widemax;
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+		background-position: left bottom;
+		@include bp($s1) {
+			background-image: none !important;
+		}
 	}
 }
 
+
+.page__headerinnerwrapper {
+	@include clearfix();
+	max-width:$widemax; 
+	margin:0 auto;
+	@include bp($s1) {
+		background-image: linear-gradient(to right, $highlight 0, $highlight 66.666%, transparent 66.666%),
+		linear-gradient(to bottom, $highlight 0, $highlight-dark 100% ) !important;
+	}
+}
+
+
 .page__header__text {
 	@include clearfix();
+	padding:0 1em;
 	@include bp($s1) {
 		float:left;
 		width:66.666%;
-		padding-right: 1em;
+		min-height: 12em;
+		border-right: .333em solid $prilight;
+	}
+	@include bp($s2) {
+		padding:0 2em;
+	}
+	@include bp($s3) {
+		padding:0 3em;
+	}
+	@include bp($s4) {
+		padding:0 4em;
 	}
 }
 .page__header__figure {
 	@include clearfix();
 	position: relative;
-	margin:0 -1em;
+	margin:0 0;
 	background-repeat: no-repeat;
 	background-size: auto 100%;
 	background-position: left bottom;
@@ -61,6 +101,10 @@
 	margin:.5em 0 2em;
 }
 
+.page__contentinnerwrapper {
+	max-width:$widemax; 
+	margin:0 auto;
+}
 .page__conentwrapper, .page__contentinnerwrapper {
 	@include clearfix();
 	@include bp($s2) {
@@ -70,11 +114,18 @@
 
 .page__content {
 	@include clearfix();
+	padding:0 1em;
 	@include bp($s2) {
 		float:left;
 		width:66.666%;
-		//padding-right: 1em;
+		padding-right: 0 2em;
 		border-right: .25em solid $prilight;
+	}
+	@include bp($s3) {
+		padding:0 3em;
+	}
+	@include bp($s4) {
+		padding:0 4em;
 	}
 
 }
@@ -82,7 +133,7 @@
 .page__sidebar {
 	@include clearfix();
 	background-color: $seclight;
-	margin:1em -1em 0;
+	margin:1em 0 0;
 	@include bp($s2) {
 		float:right;
 		width:33.333%;

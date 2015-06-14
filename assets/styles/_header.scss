@@ -27,8 +27,13 @@
 	transition: margin .4s ease;
 	
 	margin-right: -100%;
+
 	.nav_isactive & {
 		margin-right: 0;
+	}
+	
+	.wrapper {
+		padding:0 0;
 	}
 
 	@include bp($s2) {
@@ -39,6 +44,21 @@
 		margin-right: 0;
 		.nav_isactive & {
 			margin-right: 0;
+		}
+
+		.wrapper {
+			padding:0 2em;
+		}
+	}
+
+	@include bp($s3) {
+		.wrapper {
+			padding:0 3em;
+		}
+	}
+	@include bp($s4) {
+		.wrapper {
+			padding:0 4em;
 		}
 	}
 }

@@ -134,6 +134,12 @@
 		}
 	}
 
+	> li.active {
+		> a {
+			border-left:3px solid $highlight;
+		} 
+	}
+
 	.sub-menu {
 		display: none;
 		overflow: hidden;

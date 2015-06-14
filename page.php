@@ -4,7 +4,7 @@
   <?php get_template_part('templates/page', 'header'); ?>
 
   <div class="page__conentwrapper">
-		<div class="wrapper wrapper--wide">
+		<div class="wrapper wrapper--fullwidth">
 			<div class="page__contentinnerwrapper">
 				<div class="page__content">
 					<?php the_content(); ?>
