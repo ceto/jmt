@@ -19,9 +19,9 @@
 }
 
 .textwidget {
-  font-size: .875em;
+ 	font-size: 1em;
 
-  padding: .5em 1em .5em 2.25em ;
+  padding: .5em 1em .5em 2em ;
 }
 
 .widget_nav_menu {
@@ -29,7 +29,7 @@
 
 	.menu {
 		list-style-type: none;
-		margin:.5em 0 1em;
+		margin:0 0 1em;
 		padding:0;
 		li {
 			margin:0;
@@ -40,9 +40,9 @@
 				display: block;
 				text-transform: uppercase;
 				color:$pridark;
-				font-size: .875em;
+				font-size: 1em;
 				line-height: 1.25;
-				padding:.5em 1em .5em 2.25em;
+				padding:.5em 1em .5em 2em;
 				border-left: .333em solid transparent;
 				&:hover, &:focus {
 					background-color: $tertdark;
@@ -57,15 +57,13 @@
 				border-top:none;
 			}
 		}
-
-		> li {
-			
+		
+		li.separator {
 			> a {
-				border-bottom: 1px solid #d0d0d0;
 				text-transform: none;
+				padding-left: 1em;
+				padding-top: 1.75em;
 				color:$tertdark;
-				padding-left: .875em;
-				padding:1.5em 1em .5em 1em;
 				&:hover, &:focus {
 					background-color: transparent;
 					border-left-color:transparent;
@@ -73,13 +71,16 @@
 				}
 			}
 		}
-		
-		.sub-menu {
-			margin:0;
-			padding:0;
-			border-top: 1px solid $prilight;
-
+		li.active:not(.separator) {
+			> a {
+				background-color: $tertdark;
+				border-left-color:$secdark;
+				color:$prilight;
+			}
 		}
+
+
+
 
 	}
 }

@@ -24,7 +24,7 @@ body {
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 1.4;
-	@include bp($s3){
+	@include bp($s4){
 		font-size: 16px;
 	}
 	@include bp($s5){
@@ -100,9 +100,9 @@ a {
 
 
 ul {
-	list-style-type: none;
-	padding:0;
-	margin:2em 0;
+	//list-style-type: none;
+	padding:0 0 0 2.5em;
+	margin:1.5em 0;
 	li {
 		margin:.5em 0;
 	}

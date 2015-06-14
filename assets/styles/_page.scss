@@ -142,3 +142,26 @@
 	}
 
 }
+
+.highlight{
+	@include clearfix();
+	background:$seclight;
+	border:2px solid $seclight;
+	padding:1em 1em;
+	margin:1em 0;
+	transition: all 400ms ease;
+}
+.highlight:hover {
+	background:#fff;
+	border:2px solid $seclight;
+}
+
+.highlight--negative{
+  background:$highlight;
+  color:$prilight;
+  border:2px solid $seclight;
+}
+.highlight--negative:hover {
+  background:$secdark;
+  border:2px solid $seclight;
+}
