@@ -1,6 +1,9 @@
 <header class="banner--mobile" role="banner">
   <div class="wrapper wrapper--wide">
-    <a class="brand--mobile" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+		<div class="thebrand--mobile">
+  		<a class="thebrand--mobile__logo" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+  		<span class="thebrand--mobile__sitename"><?php bloginfo('name'); ?></span>
+  	</div>
     <a href="#" class="toggle--menu">MENÜ</a>
   </div>
 </header>

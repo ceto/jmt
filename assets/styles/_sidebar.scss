@@ -1,27 +1,32 @@
 .widget {
-  margin: 2em 0 3em;
+  margin: 4em 0 4em;
   .pagefooter & {
     margin: 0;
   }
 }
 .widget__title {
+	font-family: $sans-serif;
   font-size: 1em;
   font-weight: 700;
   line-height: 1;
 
   margin: 0;
-  padding: 0 0 0 .666em;
+  padding: 0 0 0 1rem;
 
   text-transform: uppercase;
 
   color: $highlight;
-  border-left: .333em solid $highlight;
+  border-left: .333rem solid $highlight;
 }
 
 .textwidget {
  	font-size: 1em;
 
-  padding: .5em 1em .5em 2em ;
+  padding: .5em 1em .5em 2.333rem ;
+
+  .pagefooter & {
+		padding: .5em 0 .5em 0;  	
+  }
 }
 
 .widget_nav_menu {
@@ -42,7 +47,7 @@
 				color:$pridark;
 				font-size: 1em;
 				line-height: 1.25;
-				padding:.5em 1em .5em 2em;
+				padding:.5em 1em .5em 2rem;
 				border-left: .333em solid transparent;
 				&:hover, &:focus {
 					background-color: $tertdark;
@@ -61,7 +66,7 @@
 		li.separator {
 			> a {
 				text-transform: none;
-				padding-left: 1em;
+				padding-left: 1rem;
 				padding-top: 1.75em;
 				color:$tertdark;
 				&:hover, &:focus {

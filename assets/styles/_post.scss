@@ -1,0 +1,27 @@
+.entry {
+	@include clearfix();
+	margin:0 0 3em 0;
+	padding:0 0 3em;
+	&:not(:last-child) {
+		border-bottom:1px solid $seclight;
+	}
+
+}
+.entry__title {
+	margin:0 0;
+	font-family: $dosis;
+	font-size:1.5em;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.entry__meta {
+
+}
+
+.entry__summary {
+	margin:1em 0 0 0;
+	p {
+		margin:0;
+	}
+}

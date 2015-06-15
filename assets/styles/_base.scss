@@ -35,7 +35,10 @@ body {
 
 a {
 	text-decoration: none;
-	color:$highlight;
+	color:$highlight-light;
+	&:hover, &:focus {
+		color: $highlight;
+	}
 }
 
 .wrapper {
@@ -45,7 +48,7 @@ a {
 	padding:0 1em;
 	max-width: $normalmax;
 	@include bp($s1) {
-		padding:0 1em;
+		padding:0 2em;
 	}
 	@include bp($s2) {
 		padding:0 2em;
@@ -96,7 +99,7 @@ a {
 	}
 }
 
-
+/********* Typography ********/
 
 
 ul {
@@ -108,3 +111,92 @@ ul {
 	}
 }
 
+
+h2, h3, h4 {
+	font-family: $dosis;
+	font-weight: 600;
+	margin: 2.5rem 0 0;
+	color:$highlight;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 1.25em;
+}
+h3 {
+	font-size: 1.25em;
+}
+
+h4 {
+	font-size: 1.125em;
+}
+blockquote {
+	@include clearfix();
+	margin:1.5rem 0;
+	padding:1.5rem 1.5rem 1.25rem 1.875rem;
+	background-color: $seclight;
+	border-left:.25em solid $highlight;
+	//font-style: italic;
+	font-family: $dosis;
+	font-size: 1.25em;
+	font-weight: 500;
+	color: $secdark;
+
+	& > *:first-child {
+		margin-top: 0;
+	}
+	& > *:last-child {
+		margin-bottom: 0;
+	}
+
+
+}
+.highlight{
+	@include clearfix();
+	background:$seclight;
+	color:$secdark;
+	border:.333rem solid $seclight;
+	padding:2rem 1.5rem;
+	margin:1.5rem 0;
+	transition: all 400ms ease;
+	& > *:first-child {
+		margin-top: 0;
+	}
+	& > *:last-child {
+		margin-bottom: 0;
+	}
+}
+.highlight:hover {
+	background:#fff;
+	border-color: $seclight;
+}
+
+
+.onehalf {
+	@include clearfix();
+	@include bp($s1) {
+		width:49%;
+		float:left;
+		margin:0 1% 4em 0;
+		
+		&.last {
+			margin:0 0 4em 1%;
+			float:right;
+		}
+
+		& > *:first-child {
+			margin-top: 0;
+		}
+
+	}
+	
+}
+.highlight--negative{
+  background:$highlight;
+  color:$prilight;
+  border:2.33rem solid $seclight;
+}
+.highlight--negative:hover {
+  background:$secdark;
+  border-color: $seclight;
+}

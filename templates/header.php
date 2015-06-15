@@ -8,8 +8,14 @@
       endif;
       ?>
     </nav>
+    
+    <div class="thebrand">
+      <a class="thebrand__logo" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+      <span class="thebrand__sitename"><?php bloginfo('name'); ?></span>
+      <span class="thebrand__sitedescr"><?php bloginfo('description'); ?></span>
+      
+    </div>
 
-    <a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
     <?php do_action('icl_language_selector');  ?>
   </div>
 </header>
