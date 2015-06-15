@@ -1,6 +1,6 @@
 .member {
 	@include clearfix();
-	margin:2em 0;
+	margin:4em 0;
 }
 .member__head {
 	@include clearfix();
@@ -10,7 +10,7 @@
 }
 .member__name {
 	margin:0 0;
-	font-size: 1em;
+	font-size: 1.25em;
 	line-height: 1;
 	text-transform: uppercase;
 	color:$highlight;
@@ -24,10 +24,14 @@
 .member__photo {
 	margin:2em 0;
 	padding:0;
+	float:left;
+	width:33.333%;
+	margin:2em 1em .125em 0;
 	@include bp($s1) {
 		width:33.333%;
 		float:left;
 		padding-right: 1em;
+		margin:2em 0;
 	}
 	img {
 		display: block;

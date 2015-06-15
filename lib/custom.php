@@ -7,6 +7,11 @@ define('ICL_DONT_LOAD_LANGUAGES_JS', TRUE);
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
 
+function jmt_deregister_plugin_assets_footer() {
+  wp_dequeue_style('yarppRelatedCss');
+}
+add_action( 'wp_footer', 'jmt_deregister_plugin_assets_footer' );
+
 function jmt_highlight( $atts, $content = null ) {
 	return '<div class="highlight">' . do_shortcode($content) . '</div>';
 }

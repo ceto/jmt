@@ -151,6 +151,9 @@
 		padding: 4em 2em 6em;
 		border-right: .25em solid $prilight;
 		min-height: 70em;
+		.home & {
+			min-height:45em;
+		}
 	}
 	@include bp($s3) {
 		padding:4em 3em 6em;

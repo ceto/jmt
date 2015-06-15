@@ -27,6 +27,7 @@
   .pagefooter & {
 		padding: .5em 0 .5em 0;  	
   }
+
 }
 
 .widget_nav_menu {
@@ -87,5 +88,15 @@
 
 
 
+	}
+}
+
+
+.widget_text {
+	.home .page__sidebar & {
+		display: none;
+	}
+	.page-template-template-contact-php .page__sidebar &:last-child {
+		display: none;
 	}
 }

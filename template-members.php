@@ -22,7 +22,7 @@
 									<p class="member__title"><?= $entry['title'] ?></p>
 								</header>
 								<figure class="member__photo">
-									<img src="http://placehold.it/300x400" alt="">
+									<img src="http://placehold.it/600x800" alt="">
 								</figure>
 								<div class="member__descr">
 									<?= wpautop( $entry['descr'] ) ?>

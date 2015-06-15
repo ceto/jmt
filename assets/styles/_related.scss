@@ -1,0 +1,26 @@
+.relatedblock {
+	margin: 4em 0;
+}
+
+.related__head {
+	@include clearfix();
+	border-left:.333em solid $highlight;
+	background-color: $seclight;
+	padding:.5em 1em;
+
+}
+.related__title {
+	margin:0 0;
+	font-size: 1em;
+	line-height: 1;
+	text-transform: uppercase;
+	color:$highlight;
+}
+
+.related__list {
+
+}
+
+.related__item {
+	
+}
