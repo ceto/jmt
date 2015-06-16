@@ -27,5 +27,8 @@
         "./assets/javascripts/bootstrap/tab.js"
       ]
     }
+  },
+  "devDependencies": {
+    "Ionicons": "https://github.com/driftyco/ionicons.git#~2.0.1"
   }
 }

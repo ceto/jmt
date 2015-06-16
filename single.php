@@ -10,9 +10,10 @@
 					<article <?php post_class('fullarticle'); ?>>
 						<?php the_content(); ?>
 						<footer class="page__content__footer">
-							<?php get_template_part('templates/related', 'pages'); ?>
-							<?php get_template_part('templates/related', 'posts'); ?>
 							<?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
+							<?php get_template_part('templates/share', 'this'); ?>
+							<?php get_template_part('templates/related', 'pages'); ?>
+							<?php get_template_part('templates/related', 'posts'); ?>					
 						</footer>
 					</article>
 				<?php endwhile; ?>

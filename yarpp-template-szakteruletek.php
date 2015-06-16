@@ -11,10 +11,16 @@ Author: Gabor Szabo (szabogabi@gmail.com)
 	<header class="related__head">
 		<h2 class="related__title"><?php _e('Kapcsolódó szakterületek','jmt'); ?></h2>
 	</header>
-	<ol class="related__list">
+	<ul class="related__list">
 		<?php while (have_posts()) : the_post(); ?>
-		<li class="related__item"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a><!-- (<?php the_score(); ?>)--></li>
+			<li class="related__item">
+				<a href="<?php the_permalink() ?>" rel="bookmark">
+					<i class="ion ion-arrow-right-c"></i>
+					<?php the_title(); ?>
+					<span><?= get_post_meta( get_the_ID(), 'preface', true )  ?></span>
+				</a>
+			<!-- (<?php the_score(); ?>)--></li>
 		<?php endwhile; ?>
-	</ol>
+	</ul>
 </section>
 <?php endif; ?>

@@ -40,7 +40,7 @@
 		padding:0 0;
 		margin:0 0;
 		&:not(:last-child) {
-			border-bottom: 1px solid #d0d0d0;
+			border-bottom: 1px solid $linea;
 		}
 
 		&:not(:first-child) {
@@ -150,7 +150,7 @@
 				display: block;
 				text-align: left;
 				&:not(:last-child) {
-					border-bottom: 1px solid #d0d0d0;
+					border-bottom: 1px solid $linea;
 				}
 
 				&:not(:first-child) {

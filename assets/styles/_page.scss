@@ -191,3 +191,50 @@
 	border-bottom:.333em solid #fff;
 	
 }
+
+
+
+
+
+.sharing {
+	@include clearfix();
+	display: block;
+	margin: 2em 0;
+	background-color: $seclight;
+	border-left: .333rem solid $highlight;
+	padding:1rem 1rem;
+	transition:all .2s ease;
+	&:hover, &:focus {
+			background-color: #fff;
+		}
+	h3 {
+		display: block;
+		//max-width: 20em;
+		//background-color: $seclight;
+
+		font-size: 1em;
+		line-height: 1;
+		
+		color:$highlight;
+		margin:0 0 .5em;
+	}
+
+	a {
+		display: inline-block;
+		font-size: 1rem;
+		line-height: 1.666;
+		width:1.666em;
+		height:1.666em;
+		text-align: center;
+		background-color: $tertdark;
+		color:$prilight;
+		margin-right: .25em;
+		&:hover, &:focus {
+			background-color: $highlight;
+		}
+
+		&:first-of-type {
+			//margin-left: 1.333rem;
+		}
+	}
+}

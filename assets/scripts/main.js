@@ -103,5 +103,17 @@ $(document).ready(function() {
     $('.subcsusza').removeClass('subcsusza--isactive');
   });
 
+  /****Sharer poup****/
+  $('.sharing a').click(function(e) {
+    e.preventDefault();
+    window.open($(this).attr('href'),'share','width=600,height=400,left='+(screen.availWidth/2-225)+',top='+(screen.availHeight/2-150)+'');
+  });
 
+});
+
+
+/****Sharer poup****/
+$('.socialshare ul li a').click(function(e) {
+  e.preventDefault();
+  window.open($(this).attr('href'),'share','width=600,height=400,left='+(screen.availWidth/2-225)+',top='+(screen.availHeight/2-150)+'');
 });
