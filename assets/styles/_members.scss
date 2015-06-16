@@ -27,6 +27,7 @@
 	float:left;
 	width:33.333%;
 	margin:2em 1em .125em 0;
+	text-align: center;
 	@include bp($s1) {
 		width:33.333%;
 		float:left;
@@ -34,7 +35,7 @@
 		margin:2em 0;
 	}
 	img {
-		display: block;
+		//display: block;
 	}
 }
 .member__descr {

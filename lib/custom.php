@@ -16,10 +16,12 @@ function jmt_highlight( $atts, $content = null ) {
 	return '<div class="highlight">' . do_shortcode($content) . '</div>';
 }
 add_shortcode('highlight', 'jmt_highlight');
+
 function jmt_negative_highlight( $atts, $content = null ) {
 		return '<div class="highlight highlight--negative">' . do_shortcode($content) . '</div>';
 	}
-add_shortcode('highlight-negative', 'jmt_negative_highlight');
+add_shortcode('negative_highlight', 'jmt_negative_highlight');
+
 function short_one_half( $atts, $content = null ) {
 		return '<div class="onehalf">' . do_shortcode($content) . '</div>';
 	}

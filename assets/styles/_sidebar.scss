@@ -25,8 +25,13 @@
   padding: .5em 1em .5em 2.333rem ;
 
   .pagefooter & {
-		padding: .5em 0 .5em 0;  	
+		padding: .333em 0;
+		p {
+			margin:0 0;
+		}  	
   }
+
+
 
 }
 
@@ -92,7 +97,7 @@
 }
 
 
-.widget_text {
+.widget_text_icl {
 	.home .page__sidebar & {
 		display: none;
 	}

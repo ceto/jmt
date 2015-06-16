@@ -22,7 +22,8 @@
 									<p class="member__title"><?= $entry['title'] ?></p>
 								</header>
 								<figure class="member__photo">
-									<img src="http://placehold.it/600x800" alt="">
+									<?php $the_foto = wp_get_attachment_image_src( $entry['photo_id'], 'full', false ) ?>
+									<img src="<?= $the_foto[0] ?>" alt="">
 								</figure>
 								<div class="member__descr">
 									<?= wpautop( $entry['descr'] ) ?>

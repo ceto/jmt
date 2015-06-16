@@ -1,5 +1,52 @@
 .pagefooter {
-	background-color: $footerdark;
-	color:#fff;
-	padding: 1em 0;
+	background-color: $prilight;
+
+	@include bp($s2) {
+		background-image: linear-gradient(to right, $prilight 0, $prilight 66.666%, $seclight 66.666%);
+		.wrapper {
+			background-image: linear-gradient(to right, $prilight 0, $prilight 66.666%, $seclight 66.666%);
+		}
+	}
+
+	.wrapper {
+		max-width: $widemax;
+	}
 }
+
+.pagefooter__inner {
+	padding:2rem 2rem;
+	font-size: .875em;
+	color:$secdark;
+	
+	@include bp($s2) {
+		width: 66.666%;
+		border-right: .25rem solid $prilight;
+		padding:1rem 2rem 3rem;
+	}
+	
+	@include bp($s3) {
+		padding:1rem 3rem 3rem;
+		font-size: .75em;
+	}
+	
+	@include bp($s4) {
+		padding:1rem 4rem 3rem;
+	}
+}
+
+.pagefooter__inner hr {
+	display: none;
+	@include bp($s2) {
+		display: block;
+		height:0;
+		width: 100%;
+		border-top:1px solid $linea;
+		border-bottom:1px solid #fff;
+		background-color: transparent;
+		border-right:none;
+		border-left:none;
+		margin-bottom: 1em;
+		
+	};
+}
+
