@@ -97,7 +97,14 @@ $(document).ready(function() {
 
   // });
 
-  $('.btn--sideclose').click(function(){
+
+  $('.dropdown > a').click(function(e) {
+    e.preventDefault();
+    $(this).parent().toggleClass('is_open');
+  });
+
+
+  $('.btn--sideclose').click(function(e){
     $( '.openform' ).removeClass('active');
     $('.subcsusza__side').removeClass('subcsusza__side--is_show');
     $('.subcsusza').removeClass('subcsusza--isactive');

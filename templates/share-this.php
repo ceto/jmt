@@ -1,6 +1,6 @@
 
 <div class="sharing">
-  <h3><?php _e('Hasznosnak találta? Osszameg imerőseivel','jmt'); ?></h3>
+  <h3><?php _e('Is it useful? Share with your friends','jmt'); ?></h3>
 
   <a href="http://www.facebook.com/sharer.php?p[url]=<?php echo urlencode(get_the_permalink()); ?>">
         <i class="ion ion-social-facebook"></i></a>

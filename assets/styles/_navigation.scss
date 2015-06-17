@@ -96,13 +96,28 @@
 		} 
 	}
 
-
+	
+	// .dropdown {
+	// 	> a {
+	// 		&:after {
+	// 			content:" +";
+	// 		}
+	// 	}
+	// 	&.is_open {
+	// 		> a {
+	// 			&:after {
+	// 				content:" ×";
+	// 			}
+	// 		}
+	// 	}
+	// }
 	.dropdown.is_open > a + .sub-menu{
 		height:auto;
 	}
-	a:focus + .sub-menu {
-		height: auto;
-	}
+
+	// a:focus + .sub-menu {
+	// 	height: auto;
+	// }
 
 	.sub-menu {
 		overflow: hidden;

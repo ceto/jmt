@@ -9,7 +9,7 @@ Author: Gabor Szabo (szabogabi@gmail.com)
 <?php if (have_posts()) :?>
 <section class="relatedblock">
 	<header class="related__head">
-		<h2 class="related__title"><?php _e('Kapcsolódó írások','jmt'); ?></h2>
+		<h2 class="related__title"><?php _e('Related posts','jmt'); ?></h2>
 	</header>
 	<ul class="related__list">
 		<?php while (have_posts()) : the_post(); ?>
