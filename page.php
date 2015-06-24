@@ -9,7 +9,7 @@
 					<?php the_content(); ?>
 					<footer class="page__content__footer">
 						<?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
-						<?php get_template_part('templates/call', 'me'); ?>
+						<?php //get_template_part('templates/call', 'me'); ?>
 						<?php get_template_part('templates/related', 'pages'); ?>
 						<?php get_template_part('templates/related', 'posts'); ?>						
 					</footer>

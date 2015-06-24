@@ -36,6 +36,7 @@
 }
 
 .widget_nav_menu {
+	display: none;
 
 
 	.menu {
@@ -94,14 +95,39 @@
 
 
 	}
+	
+	@include bp($s2) {
+		display: block;
+	}
+
 }
 
 
-.widget_text_icl {
-	.home .page__sidebar & {
+.page__sidebar .widget_text_icl {
+	&:last-child {
+		display: none;
+		@include bp($s2) {
+			display: block;
+		}
+	}
+
+	.home &:last-child {
+		@include bp($s2) {
+			display: none;
+		}
+	}
+
+	.home &:first-child {
+		@include bp($s2) {
+			display: none;
+		}
+	}
+
+	.page-template-template-contact-php &:first-child {
 		display: none;
 	}
-	.page-template-template-contact-php .page__sidebar &:last-child {
-		display: none;
+	.page-template-template-contact-php &:last-child {
+		display: block;
 	}
+
 }

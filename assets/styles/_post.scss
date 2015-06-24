@@ -1,7 +1,8 @@
 .entry {
 	@include clearfix();
-	margin:0 0 3em 0;
-	padding:0 0 3em;
+	//font-size: .875em;
+	margin:0 0 2.5em 0;
+	padding:0 0 2.5em;
 	&:not(:last-child) {
 		border-bottom:1px solid $seclight;
 	}
@@ -11,8 +12,15 @@
 	margin:0 0;
 	font-family: $dosis;
 	font-size:1.5em;
+	line-height: 1.2;
 	font-weight: 600;
 	text-transform: uppercase;
+	a {
+		color:$highlight;
+		&:hover,&:focus {
+			color:$highlight-light;
+		}
+	}
 }
 
 .entry__meta {

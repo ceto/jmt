@@ -9,9 +9,15 @@
 						<?php get_template_part('templates/entry','meta'); ?>
 				  </div>
 			</div>
-			<?php $fig = wp_get_attachment_image_src( get_post_thumbnail_id(),'full'  ) ; ?>
+			<?php 
+				if (has_post_thumbnail() ) {
+					$fig = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' ) ; 
+				} else {
+					$fig = wp_get_attachment_image_src( get_post_thumbnail_id(53), 'full' ) ;
+				}
+			?>
 			<style>
-				.page__header__figure, .page__header .wrapper {
+				.page__header__figure {
 					background-image: url('<?php echo $fig['0']; ?>');
 				}
 			</style>

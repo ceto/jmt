@@ -42,7 +42,7 @@
 		padding:0 0;
 		margin:0 0;
 		&:not(:last-child) {
-			border-bottom: 1px solid $linea;
+			border-bottom: 1px solid transparent;
 		}
 
 		&:not(:first-child) {
@@ -71,19 +71,19 @@
 			line-height: 1em;
 			font-weight: 600;
 			font-family: $dosis;
-			color: $highlight;
+			color: $secdark;
 			border-left:.333rem solid transparent;
 
 
 			&:hover,&:focus {
 				text-decoration: none;
-				color:$highlight-dark;
+				color:$highlight;
 				//border-left:.333rem solid $highlight;
-				color:$highlight-light;
+				color:$highlight;
 			}
 
 			@include bp($s2){
-
+				color: $highlight;
 			}
 			
 		}
@@ -92,7 +92,7 @@
 	li.active{
 		> a {
 			//border-left:.333rem solid $highlight;
-			color:$highlight-light;
+			color:$highlight;
 		} 
 	}
 
@@ -168,7 +168,7 @@
 				display: block;
 				text-align: left;
 				&:not(:last-child) {
-					border-bottom: 1px solid $linea;
+					border-bottom: 1px solid transparent;
 				}
 
 				&:not(:first-child) {
