@@ -1,16 +1,35 @@
 form {
+	@include clearfix();
+	clear:both;
+	//padding:2em;
 	margin:1em auto;
-	max-width: $s1;
+	max-width: 27em;
+	//background-color: $seclight;
+	h3 {
+		margin-top: 0;
+	}
+	p {
+		margin:.75em 0;
+	}
 	label {
 		display: block;
-		margin:.5em 0 .125em;
+		margin:.25em 0 .125em;
 	}
 
 	input, textarea {
-		border:.25em solid $seclight;
+		border:.125em solid $seclight;
 		background-color: #fff;
-		padding:.25em .25em;
+		padding:.25em .5em;
 		width:100%;
+		&:focus, &:active, &:hover {
+			outline-color:$linea;
+			outline-width: 1px;
+			border-color: $linea;
+		}
+	}
+
+	textarea {
+		height:8em;
 	}
 	input[type="submit"] {
 		background-color: $tertdark;
@@ -18,7 +37,7 @@ form {
 		font-weight: 700;
 		color:$prilight;
 		&:hover, &:focus {
-			background-color: highlight;
+			background-color: $secdark;
 		}
 	}
 	span.wpcf7-not-valid-tip {

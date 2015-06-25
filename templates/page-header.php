@@ -16,7 +16,7 @@
 					<?php endif; ?>
 			</div>
 			<?php 
-				if (has_post_thumbnail() ) {
+				if (!is_home() && has_post_thumbnail() ) {
 					$fig = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' ) ; 
 				} else {
 					$fig = wp_get_attachment_image_src( get_post_thumbnail_id(53), 'full' ) ;

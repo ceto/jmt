@@ -7,7 +7,7 @@
 	background-position: left bottom;
 	//background-image: linear-gradient(to top, $prilight 0, $prilight 8rem, $highlight 8rem );
 	
-	@include bp($s1) {
+	@include bp($s2) {
 		background-image: linear-gradient(to right, $highlight 0, $highlight 66.666%, transparent 66.666%),
 		linear-gradient(to bottom, $highlight 0, $highlight-dark 100% ) !important;
 	}
@@ -32,7 +32,7 @@
 	@include clearfix();
 	max-width:$widemax; 
 	margin:0 auto;
-	@include bp($s1) {
+	@include bp($s2) {
 		background-image: linear-gradient(to right, $highlight 0, $highlight 66.666%, transparent 66.666%),
 		linear-gradient(to bottom, $highlight 0, $highlight-dark 100% ) !important;
 	}
@@ -43,7 +43,7 @@
 	@include clearfix();
 	padding:2em 1em;
 	min-height: 10em;
-	@include bp($s1) {
+	@include bp($s2) {
 		padding:2em 2em;
 		float:left;
 		width:66.666%;
@@ -70,11 +70,10 @@
 	background-repeat: no-repeat;
 	background-size: auto 100%;
 	background-position: left bottom;
-	//min-height:8rem;
 	border-top: .333rem solid #fff;
 	//border-bottom: .333rem solid #fff;
 
-	@include bp($s1) {
+	@include bp($s2) {
 		border: none;
 		float:right;
 		width:33.333%;
