@@ -1,5 +1,5 @@
 <header class="banner" role="banner">
-  <div class="banner__inner wrapper wrapper--wide">
+  <div id="banner__inner" class="banner__inner wrapper wrapper--wide">
     
 
     <div class="thebrand">

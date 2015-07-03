@@ -1,24 +1,33 @@
 .toggle--menu {
-	position:absolute;
+	position:fixed;
 	display: inline-block;;
 	z-index:10;
 	right:0;
-	top:-.666em;
+	top:0;
 	//background-color: #fff;
 	color: $highlight-light;
-	font-size: .875em;
-	line-height: 4.25;
-	padding:.333em 1.25em 0;
+	text-shadow:0 0 1px #fff;
+	//background-color: $prilight;
+	font-size: 1em;
+	line-height: 1;
+	padding:.75em 1.25em;
 	text-align: center;
 	outline: none;
 	font-weight: 600;
 	font-family: $dosis;
 	text-transform: uppercase;
+	cursor: pointer;
 	&:hover, &:focus {
 		text-decoration: none;
 		//background-color: #fff;
 		color:$highlight;
 	}
+	.nav_isactive & {
+		//right:20em;
+		//background-color: #fff;
+	}
+
+
 
 	@include bp($s1) {
 	}
@@ -109,6 +118,7 @@
 	display: block;
 	margin:.666rem 0 0 0;
 	float:left;
+	min-width: 14em;
 	@include bp($s1) {
 		font-size: 1.333em;
 		margin-top: .5rem;
@@ -163,10 +173,10 @@
 
 .banner {
 	@include clearfix();
+	position: relative;
 	width:20em;
-	min-height: 100vh;
+	height: 100vh;
 	float:right;
-
 	transition: margin .4s ease;
 	
 	margin-right: -100%;
@@ -181,8 +191,17 @@
 		background-position: center 10em;
 		background-size: 75% auto;
 		background-repeat: no-repeat;
+		position: fixed;
+		top:0; right:0;
+		bottom:0;
+		width:20em;
+		overflow:auto;
+
 		
 		@include bp($s2) {
+			width:auto;
+			position:relative;
+			overflow: visible;
 			background-position: 5% center;
 			background-size: auto 100%;
 			min-height: 10rem;
@@ -191,12 +210,14 @@
 		@include bp($s4) {
 			min-height: 10rem;
 		}
+		@include bp($s5) {
+			min-height: 11rem;
+		}
 	}
 
 	@include bp($s2) {
 		background-color: $prilight;
-
-		min-height: 0;
+		height: auto;
 		width:100%;
 		float:none;
 		margin-right: 0;

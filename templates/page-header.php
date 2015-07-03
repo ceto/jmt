@@ -23,7 +23,7 @@
 				}
 			?>
 			<style>
-				.page__header__figure {
+				.page__header__figure, .page__header {
 					background-image: url('<?php echo $fig['0']; ?>');
 				}
 			</style>
