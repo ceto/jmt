@@ -12,6 +12,10 @@
 		.page__header__text {
 			text-shadow:0 0 1px $highlight;
 		}
+		@include bp($s2) {
+		  background-image: linear-gradient(to right, $highlight 0, $highlight 66.666%, transparent 66.666%),
+		linear-gradient(to bottom, $highlight 0, $highlight-dark 100% ) !important;
+		}
 	
 	}
 	
@@ -31,6 +35,9 @@
 		background-position: left bottom;
 		@include bp($s1) {
 			background-image: none !important;
+		}
+		.page-template-template-contact-php & {
+			max-width: none;
 		}
 	}
 }
@@ -75,7 +82,7 @@
 
 .page__header__figure {
 	@include clearfix();
-	position: relative;
+	//position: relative;
 	margin:0 0;
 	background-repeat: no-repeat;
 	background-size: auto 100%;
@@ -87,20 +94,31 @@
 		border: none;
 		float:right;
 		width:33.333%;
-		min-height: 14em;
-	}
-
-	@include bp($s2) {
 		margin:0;
-		min-height: 14em;
+		//min-height: 10em;
+		&:after {
+			position: absolute;
+			content: '';
+			left:66.666%;
+			top:0;
+			bottom:0;
+			display: block;
+			width:33.333vw;
+			background-image: inherit;
+			background-position: left bottom;
+			background-size: auto 100%;
+			background-repeat: no-repeat;
+			//background-color: rgba(red,.5);
+
+
+		}
 	}
 
 	@include bp($s4) {
-		min-height: 13em;
+		//min-height: 13em;
 	}
 
 	img {
-		display: block;
 		display: none;
 	}
 }
@@ -121,19 +139,16 @@
 }
 
 .page__header__intro {
-	font-size: 1.125em;
+	font-size: 1.25em;
 	font-family: $dosis;
 	font-weight: 400;
 	max-width: 35em;
 	margin:.5em 0 0;
-	@include bp ($s2) {
-		font-size: 1.25em;
-	}
 }
 .page__header__meta {
-	font-size: 1.125em;
+	font-size: 1.25em;
 	font-family: $dosis;
-	font-weight: 500;
+	font-weight: 400;
 	max-width: 35em;
 	margin:.5em 0 2em;
 	a {
