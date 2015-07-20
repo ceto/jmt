@@ -16,7 +16,11 @@
 					<?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
 				<?php endwhile; ?>
 
-				<?php the_posts_navigation(); ?>
+				<?php the_posts_navigation(array(
+            'prev_text'          => '<i class="ion ion-arrow-left-c"></i> '.__( 'Older posts' ),
+            'next_text'          => __( 'Newer posts' ).' <i class="ion ion-arrow-right-c"></i>',
+            'screen_reader_text' => __( 'Posts navigation' ),
+        )); ?>
 			</div>
 			<aside class="page__sidebar sidebar" role="complementary">
 			  <?php include Wrapper\sidebar_path(); ?>

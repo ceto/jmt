@@ -176,6 +176,9 @@ blockquote {
 	padding:2rem 1.5rem;
 	margin:1.5rem 0;
 	transition: all 400ms ease;
+	.home & {
+		font-size: .75em;
+	}
 	& > *:first-child {
 		margin-top: 0;
 	}

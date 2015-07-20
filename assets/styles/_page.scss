@@ -61,21 +61,22 @@
 	text-shadow:0 0 2px $highlight;
 	@include bp($s2) {
 		text-shadow:none;
-		padding:2em 2em;
 		float:left;
 		width:66.666%;
-		min-height: 14em;
+		min-height: 12em;
 		border-right: .333em solid $prilight;
-	}
-	@include bp($s2) {
-		padding:2em 2em;
+		padding:2em 2em 3em;
 	}
 	@include bp($s3) {
-		padding:2em 3em;
+		padding:2em 3em 3em;
+		min-height: 13em;
 	}
 	@include bp($s4) {
-		padding:2em 4em;
+		padding:2em 4em 3em;
 		min-height: 13em;
+	}
+	@include bp($s5) {
+		
 	}
 }
 
@@ -136,6 +137,10 @@
 	@include bp ($s2) {
 		font-size: 1.75em;
 	}
+
+	.home &{
+		display: none;
+	}
 }
 
 .page__header__intro {
@@ -180,7 +185,7 @@
 		border-right: .25rem solid $prilight;
 		min-height: 70em;
 		.home & {
-			min-height:45em;
+			min-height:50em;
 		}
 	}
 	@include bp($s3) {
@@ -269,4 +274,11 @@
 			//margin-left: 1.333rem;
 		}
 	}
+}
+
+.home__contact {
+	@include clearfix();
+	font-size: .875em;
+	margin:3em 0 0;
+	padding:2em 0 0;
 }

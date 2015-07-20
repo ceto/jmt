@@ -212,3 +212,27 @@
 	}
 }
 
+.posts-navigation {
+	margin-top:4em;
+	h2 {
+		display: none;
+	}
+	a {
+		color:$tertdark;
+		font-size: .875em;
+		line-height: 1;
+		&:hover, &:focus {
+			color:$highlight;
+		}
+		width: 50%;
+		display: inline-block;
+		float:left;
+		
+	}
+	.nav-previous a {
+		
+	}
+	.nav-next a {
+		text-align: right; 
+	}
+}

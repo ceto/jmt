@@ -37,8 +37,9 @@
 
 .widget_nav_menu {
 	display: none;
-
-
+	.home & {
+		display: block;
+	}
 	.menu {
 		list-style-type: none;
 		margin:0 0 1em;
@@ -118,6 +119,7 @@
 	}
 
 	.home &:first-child {
+		display: none;
 		@include bp($s2) {
 			display: none;
 		}
